@@ -1,155 +1,61 @@
 # NBFA Science College Website
 
-Production deployment guide for hosting this Flutter web app on GitHub Pages with custom domain:
+Simple setup without GitHub Actions.
 
-- Domain: `science.nbfaschool.edu.np`
-- Hosting: GitHub Pages
-- Auto deploy: GitHub Actions
+## 1. Push All Code To GitHub
 
----
-
-## 1. Prerequisites
-
-Install and verify:
+Use these commands in this project folder:
 
 ```bash
-flutter --version
-git --version
+git add .
+git commit -m "Push full NBFA Science website code"
+git push origin main
 ```
 
-You also need:
-
-- A GitHub account
-- A GitHub repository for this project
-- Access to DNS settings for `nbfaschool.edu.np`
-
----
-
-## 2. What Is Already Configured In This Project
-
-These files are already set up:
-
-- `.github/workflows/deploy-gh-pages.yml` (build + deploy pipeline)
-- `web/CNAME` (custom domain)
-- `web/.nojekyll` (prevents Jekyll processing)
-- `lib/main.dart` uses `usePathUrlStrategy()` (clean URLs)
-
-The workflow also copies `index.html` to `404.html` so Flutter routes work on refresh/direct URL hit.
-
----
-
-## 3. Push Project To GitHub (Commands)
-
-If this folder is not yet connected to a remote repository:
+If you are setting the remote for the first time:
 
 ```bash
-git init
-git add .
-git commit -m "Initial NBFA Science web deployment setup"
-git branch -M main
-git remote add origin https://github.com/<your-github-username>/<your-repo-name>.git
+git remote add origin https://github.com/codexshivam/nbfa-science.git
 git push -u origin main
 ```
 
-If remote already exists:
+## 2. Optional: Host Manually On GitHub Pages (No Actions)
+
+Build static web files locally:
 
 ```bash
-git add .
-git commit -m "Update website and deployment config"
-git push
+flutter build web --release --base-href /
+cp build/web/index.html build/web/404.html
 ```
 
----
+Then publish `build/web` to `gh-pages` branch:
 
-## 4. GitHub Pages Settings
+```bash
+git checkout --orphan gh-pages
+git rm -rf .
+cp -r build/web/* .
+cp web/CNAME .
+touch .nojekyll
+git add .
+git commit -m "Deploy static web build"
+git push -f origin gh-pages
+git checkout main
+```
 
-In your GitHub repository:
+In GitHub repository settings:
 
-1. Open **Settings** -> **Pages**
-2. Under **Build and deployment**, choose **Source: GitHub Actions**
-3. Save settings
+1. Open **Settings -> Pages**
+2. Source: **Deploy from a branch**
+3. Branch: `gh-pages` and folder `/ (root)`
 
-Now every push to `main` or `master` triggers deployment.
+## 3. Custom Domain DNS
 
----
-
-## 5. DNS Setup For Custom Domain
-
-At your DNS provider for `nbfaschool.edu.np`, add:
+At your DNS provider, set:
 
 - Type: `CNAME`
-- Name/Host: `science`
-- Value/Target: `<your-github-username>.github.io`
+- Host: `science`
+- Value: `codexshivam.github.io`
 
-Example target:
+Final URL:
 
-`science  CNAME  yourusername.github.io`
-
-DNS propagation can take a few minutes up to 24 hours.
-
----
-
-## 6. Verify Deployment
-
-After push:
-
-1. Open GitHub -> **Actions** tab
-2. Confirm workflow **Deploy Flutter Web to GitHub Pages** is green
-3. Open:
-   - GitHub URL: `https://<your-github-username>.github.io/<your-repo-name>/` (may redirect)
-   - Custom domain: `https://science.nbfaschool.edu.np`
-
----
-
-## 7. Commands For Daily Updates
-
-Use these for each new website update:
-
-```bash
-flutter analyze
-flutter build web --release
-git add .
-git commit -m "Update content and UI"
-git push
-```
-
-GitHub Actions will deploy automatically.
-
----
-
-## 8. Optional: GitHub CLI Commands
-
-If you use GitHub CLI:
-
-```bash
-gh auth login
-gh repo create <your-repo-name> --public --source=. --remote=origin --push
-```
-
-Then go to repository settings and set Pages source to GitHub Actions.
-
----
-
-## 9. Troubleshooting
-
-### Site works on home but route refresh gives 404
-
-Already handled by this workflow using:
-
-- `cp build/web/index.html build/web/404.html`
-
-### Custom domain not opening
-
-Check:
-
-- `web/CNAME` contains exactly `science.nbfaschool.edu.np`
-- DNS CNAME points to `<your-github-username>.github.io`
-- No conflicting A/AAAA records for `science`
-
-### Deployment not running
-
-Check:
-
-- You pushed to `main` or `master`
-- GitHub Actions is enabled for repository
-- Pages source is set to GitHub Actions# nbfa-science
+- `https://science.nbfaschool.edu.np`

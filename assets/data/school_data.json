@@ -1,0 +1,243 @@
+{
+  "school_metadata": {
+    "name": "Nava Bhairabi Fuji Academy (NBFA) Science College",
+    "abbreviation": "NBFA",
+    "motto": "Scientia Potentia Est (Knowledge is Power)",
+    "established_bs": "2055 BS",
+    "affiliation": "National Examination Board (NEB), Nepal",
+    "theme_colors": {
+      "primary": "#003366",
+      "secondary": "#E31837",
+      "accent": "#F4B400"
+    },
+    "hero_title": "Join the Future of Science",
+    "hero_subtitle": "Where curiosity meets discipline and innovation shapes tomorrow's leaders.",
+    "hero_image_url": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1600&q=80"
+  },
+  "navigation_menu": [
+    {"title": "Home", "link": "/"},
+    {"title": "Academics", "submenu": ["+2 Science", "Laboratories", "Faculty"]},
+    {"title": "Admissions", "submenu": ["Process", "Scholarships", "Online Form"]},
+    {"title": "Resources", "submenu": ["Downloads", "Library", "Calendar"]},
+    {"title": "Gallery", "link": "/gallery"},
+    {"title": "Contact", "link": "/contact"}
+  ],
+  "detailed_about": {
+    "philosophy": "At NBFA, we bridge the gap between theoretical NEB curriculum and practical entrance preparation for IOM, IOE, and international universities.",
+    "core_values": [
+      {"title": "Analytical Thinking", "desc": "Moving beyond rote learning to first-principles thinking."},
+      {"title": "Ethical Science", "desc": "Understanding the impact of technology on Nepalese society."},
+      {"title": "Discipline", "desc": "Fostering a rigorous academic environment."}
+    ],
+    "leadership": [
+      {
+        "name": "Dr. Ramesh Thapa",
+        "role": "Principal",
+        "bio": "PhD in Physics from TU, over 20 years of academic administration experience.",
+        "image_url": "assets/images/team/principal.jpg"
+      },
+      {
+        "name": "Er. Sarita Pandey",
+        "role": "Academic Director",
+        "bio": "Expert in engineering pedagogy and student counseling.",
+        "image_url": "assets/images/team/director.jpg"
+      }
+    ]
+  },
+  "faculty_departments": [
+    {
+      "dept": "Physics",
+      "head": "Prof. K.P. Sharma",
+      "total_staff": 8,
+      "featured_lecturers": ["Mr. Arjun Neupane", "Ms. Deepa Rai"]
+    },
+    {
+      "dept": "Biology & Biotechnology",
+      "head": "Dr. Sunita Gurung",
+      "total_staff": 6,
+      "labs": ["Botany Lab", "Zoology Lab", "Microscopy Room"]
+    }
+  ],
+  "scholarship_scheme": {
+    "title": "NBFA Merit & Need-based Scholarships",
+    "categories": [
+      {"type": "SEE Excellence", "criteria": "GPA 4.0", "benefit": "100% Tuition Waiver"},
+      {"type": "District Topper", "criteria": "Top student from Nuwakot/Rasuwa", "benefit": "50% Waiver"},
+      {"type": "Entrance Topper", "criteria": "Rank 1-5 in NBFA Entrance", "benefit": "Full Scholarship"},
+      {"type": "Social Equity", "criteria": "Underprivileged/Martyr Family", "benefit": "Government Standard Waiver"}
+    ]
+  },
+  "academic_calendar_detailed": {
+    "current_session": "2083 BS",
+    "events": [
+      {
+        "month": "Baisakh",
+        "title": "New Admission Intake",
+        "details": "Entrance exams for Grade 11 Science."
+      },
+      {
+        "month": "Ashad",
+        "title": "First Terminal Exams",
+        "details": "Assessment of 25% of the NEB syllabus."
+      },
+      {
+        "month": "Bhadra",
+        "title": "Inter-College Science Fair",
+        "details": "Major event hosted at NBFA campus."
+      },
+      {
+        "month": "Kartik",
+        "title": "Dashain-Tihar Vacation",
+        "details": "Long break for festival celebrations."
+      },
+      {
+        "month": "Mangsir",
+        "title": "National Science Exhibition",
+        "details": "Student innovation showcase and research poster presentation."
+      },
+      {
+        "month": "Magh",
+        "title": "Second Terminal Exams",
+        "details": "Comprehensive assessment for physical and biological groups."
+      }
+    ]
+  },
+  "live_stats": [
+    {
+      "label": "Students",
+      "value": 1250,
+      "icon": "groups"
+    },
+    {
+      "label": "Faculty",
+      "value": 82,
+      "icon": "school"
+    },
+    {
+      "label": "Labs",
+      "value": 14,
+      "icon": "science"
+    }
+  ],
+  "academic_groups": [
+    {
+      "group": "Physical Group",
+      "overview": "Designed for future engineers, physicists, and technology innovators.",
+      "modules": [
+        "Advanced Physics (Mechanics, Thermodynamics, Electromagnetism)",
+        "Higher Mathematics and Applied Calculus",
+        "Chemistry for Engineering and Material Science",
+        "Computer Science with Programming Fundamentals"
+      ]
+    },
+    {
+      "group": "Biological Group",
+      "overview": "Prepared for medical, biotechnology, and life-science pathways.",
+      "modules": [
+        "Human Biology and Physiology",
+        "Organic and Biochemistry",
+        "Genetics and Biotechnology",
+        "Research Methods and Laboratory Practice"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "title": "Admission Prospectus 2083",
+      "type": "pdf",
+      "size": "3.2 MB"
+    },
+    {
+      "title": "Scholarship Application Form",
+      "type": "docx",
+      "size": "640 KB"
+    },
+    {
+      "title": "Academic Calendar",
+      "type": "pdf",
+      "size": "1.1 MB"
+    },
+    {
+      "title": "Laboratory Safety Guideline",
+      "type": "pdf",
+      "size": "940 KB"
+    },
+    {
+      "title": "Hostel Rules and Conduct",
+      "type": "docx",
+      "size": "520 KB"
+    },
+    {
+      "title": "Exam Registration Template",
+      "type": "xlsx",
+      "size": "240 KB"
+    }
+  ],
+  "gallery_images": [
+    {
+      "title": "Chemistry Lab Session",
+      "url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Physics Practical",
+      "url": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Biology Microscope Work",
+      "url": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Science Fair Exhibition",
+      "url": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Digital Classroom",
+      "url": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Robotics Workshop",
+      "url": "https://images.unsplash.com/photo-1581092918484-8313e2d1e5b3?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "contact_info": {
+    "address": "Bidur, Nuwakot, Nepal",
+    "phone": "+977-01-4800000",
+    "email": "info@science.nbfa.edu.np",
+    "maps_placeholder": "Google Maps Embed Placeholder"
+  },
+  "facility_highlights": [
+    {
+      "title": "Digital Classrooms",
+      "icon": "smart_display",
+      "desc": "Classes equipped with high-resolution projectors and interactive whiteboards."
+    },
+    {
+      "title": "Entrance Prep Wing",
+      "icon": "biotech",
+      "desc": "Special Saturday classes for CEE (Medical) and IOE (Engineering) aspirants."
+    },
+    {
+      "title": "E-Library",
+      "icon": "menu_book",
+      "desc": "Access to 5000+ digital journals and research papers through our local server."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does NBFA provide hostel facilities?",
+      "answer": "Yes, we have separate, highly managed hostels for boys and girls with 24/7 security and warden supervision."
+    },
+    {
+      "question": "What are the college hours?",
+      "answer": "The Science wing operates from 6:30 AM to 1:00 PM (Morning Shift) and 11:00 AM to 5:00 PM (Day Shift)."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Anish Shrestha",
+      "batch": "2078",
+      "achievement": "Currently studying MBBS at IOM",
+      "quote": "The rigorous lab sessions at NBFA gave me the foundation I needed for medical school."
+    }
+  ]
+}
